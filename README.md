@@ -1,2 +1,2 @@
 ## Smart Home Control
-A frontend panel for control for a smart home.
+A frontend panel for control a smart home.
