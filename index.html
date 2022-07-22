@@ -8,32 +8,72 @@
     <title>Smart home | TailwindCSS</title>
 </head>
 <body>
-    <main class="bg-plant bg-center bg-cover w-full h-screen">
-        <section class="grid place-content-center w-full h-full">
-            <div class="grid glassmorphism w-80 lg:w-[600px] lg:h-[600px] border border-black p-4">
-                <div class="text-center mb-4">
+    <main class="bg-plant bg-center bg-cover w-full box-border min-h-screen flex items-center">
+        <section class="grid place-content-center w-full h-full px-4">
+            <div class="grid glassmorphism  border border-black p-8 lg:p-16 lg:pb-24 max-w-[1000px] lg:h-[560px]">
+                <div class="text-center">
                     <p>You are controlling</p>
                     <p class="text-3xl font-bold">Main Lounge & Dinning Room</p>
                 </div>
-                <div class="grid md:grid-cols-2">
-                    <div class="w-full">
+                <div class="grid  lg:grid-cols-2 gap-4 mt-8 lg:mt-16">
+                    <div class="w-full min-h-[100px] max-h-[300px]">
                         <img
+                            class="w-full h-full"
                             loading="lazy"
                             src="https://i.ibb.co/09fmVRK/plan.png"
                         />
                     </div>
-                    <div class="grid grid-cols-2 mt-5">
-                        <div class="flex flex-col items-center bg-white/50 rounded-md">
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 place-content-center place-items-center gap-2 mt-5 lg:mt-0">
+                        <div class="relative flex flex-col items-center justify-center gap-1 py-2 bg-white/50 rounded-md h-[110px] w-full">
                             <p>Lights</p>
                             <img
                                 class="w-8"
                                 src="https://img.icons8.com/pastel-glyph/64/000000/light--v1.png"
                             />
+                            <input id="lights-toggle-button" type="checkbox" class="absolute w-full h-full opacity-0  hover:cursor-pointer" />
+                            <label for="lights-toggle-button" class="h-6 w-12 flex items-center bg-gray-400 rounded-full px-1">
+                                <div class="toggle-dot bg-white h-5 w-5 rounded-full transition duration-300"></div>
+                            </label>
+                        </div>
+                        <div class="relative flex flex-col items-center justify-center gap-1 py-2 bg-white/50 rounded-md h-[110px] w-full">
+                            <p>Cleaning</p>
+                            <img
+                                class="w-8"
+                                src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-robot-vacuum-cleaner-internet-of-things-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+                            />
+                            <input id="lights-toggle-button" type="checkbox" class="absolute w-full h-full opacity-0 hover:cursor-pointer" />
+                            <label for="lights-toggle-button" class="h-6 w-12 flex items-center bg-gray-400 rounded-full px-1">
+                                <div class="toggle-dot bg-white h-5 w-5 rounded-full transition duration-300"></div>
+                            </label>
+                        </div>
+                        <div class="relative flex flex-col items-center justify-center gap-1 py-2 bg-white/50 rounded-md h-[110px] w-full">
+                            <p>Music</p>
+                            <img
+                                class="w-8"
+                                src="https://img.icons8.com/ios/96/000000/portable-speaker2.png"
+                            />
+                            <input id="lights-toggle-button" type="checkbox" class="absolute w-full h-full opacity-0 hover:cursor-pointer" />
+                            <label for="lights-toggle-button" class="h-6 w-12 flex items-center bg-gray-400 rounded-full px-1">
+                                <div class="toggle-dot bg-white h-5 w-5 rounded-full transition duration-300"></div>
+                            </label>
+                        </div>
+                        <div class="relative flex flex-col items-center justify-center gap-1 py-2 bg-white/50 rounded-md h-[110px] w-full">
+                            <p>Motion sensor</p>
+                            <img
+                                class="w-8"
+                                src="https://img.icons8.com/ios-glyphs/90/000000/infrared-beam-sending.png"
+                            />
+                            <input id="lights-toggle-button" type="checkbox" class="absolute w-full h-full opacity-0 hover:cursor-pointer" />
+                            <label for="lights-toggle-button" class="h-6 w-12 flex items-center bg-gray-400 rounded-full px-1">
+                                <div class="toggle-dot bg-white h-5 w-5 rounded-full transition duration-300"></div>
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="./public/assets/js/main.js"></script>
 </body>
 </html>
